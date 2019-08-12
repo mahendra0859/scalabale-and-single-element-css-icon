@@ -1,0 +1,42 @@
+body {
+  background-color: #087fb7;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lamp {
+  font-size: 18.75rem;
+  height: 0;
+  width: 0.45em;
+  border-bottom: 0.4em solid white;
+  border-left: 0.08em solid transparent;
+  border-right: 0.08em solid transparent;
+  position: relative;
+}
+.lamp:before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 0.37em;
+  width: 0.04em;
+  margin: auto;
+  top: 0.4em;
+  left: 0;
+  right: 0;
+  box-shadow: 0.18em -0.28em 0 -0.01em white;
+}
+.lamp:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 0.04em;
+  width: 0.35em;
+  top: 0.77em;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
